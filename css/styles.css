@@ -158,7 +158,8 @@ img {
   min-width: 169px;
   height: 56px;
   background: #4d5ae5;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
   padding: 16px 32px;
@@ -568,9 +569,10 @@ img {
   padding-left: 16px;
   padding-bottom: 32px;
 }
-.picture-item:is(:hover, :focus){
-display: block;
-box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.picture-item:is(:hover, :focus) {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /* -------------CONTEINERS INDEX */
 .conteiner {
