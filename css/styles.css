@@ -71,8 +71,10 @@ img {
   width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
-  border-bottom: 1px solid #e7e9fc;
   margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-web {
   width: 44px;
@@ -81,7 +83,7 @@ img {
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33em;
+  line-height: 1.33;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -94,7 +96,7 @@ img {
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33em;
+  line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-grey-color);
@@ -171,7 +173,8 @@ img {
 }
 .button-text {
   font-size: 16px;
-  line-height: 1.5em;
+  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-white-color);
   flex: none;
@@ -215,6 +218,8 @@ img {
   margin-right: 24px;
 }
 .section-two-icon {
+  width: 264px;
+  height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -427,10 +432,6 @@ img {
   color: #e7e9fc;
   margin-top: 16px;
 }
-.conteiner-footer {
-  padding-right: 15px;
-  padding-left: 15px;
-}
 .footer-soc-title {
   font-weight: 600;
   font-size: 16px;
@@ -474,7 +475,10 @@ img {
   display: flex;
   align-items: baseline;
 }
-.footer-soc-item:is(:hover, :focus) {
+.footer-soc-item:hover {
+  background-color: #31d0aa;
+}
+.footer-soc-item:focus {
   background-color: #31d0aa;
 }
 /* ---------PORTFOLIO------------- */
@@ -510,12 +514,16 @@ img {
 }
 .btn:hover,
 .btn:focus {
-  background: #404bbf;
+  background: #4d5ae5;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--activ-color);
 }
 .portfolio-btn-text {
   font-family: inherit;
   font-size: 16px;
-  line-height: 1.5em;
+  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
   padding: 12px 24px;
@@ -580,7 +588,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 .conteiner-section-two {
   max-width: 1158px;
